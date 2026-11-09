@@ -15,7 +15,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23212326'/%3E%3Ctext x='16' y='22' font-family='Archivo,Helvetica,sans-serif' font-size='16' font-weight='500' fill='%23ece9e4' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
 
@@ -94,29 +94,17 @@
     border-radius:2px;
   }
 
-  .redacted{
+  .redaction{
     display:inline-block;
-    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-    font-weight:400;
-    font-size:.93em;
-    letter-spacing:.01em;
-    padding:.06em .42em .12em;
-    border-radius:1.5px;
-    cursor:help;
-    color:transparent;
-    background:var(--ink-black);
-    box-shadow:.14em 0 0 var(--ink-black), -.09em .03em 0 var(--ink-black);
-    transform:rotate(-.5deg);
-    transition:color .28s ease, background-color .28s ease, box-shadow .28s ease;
+    width:9.4em;
+    height:1.42em;
+    vertical-align:-.36em;
+    transform:rotate(-.7deg);
+    user-select:none;
+    pointer-events:none;
   }
 
-  .redacted:hover,
-  .redacted:focus{
-    color:var(--accent);
-    background:rgba(211,171,121,.1);
-    box-shadow:.14em 0 0 rgba(211,171,121,.1), -.09em .03em 0 rgba(211,171,121,.1);
-    outline:none;
-  }
+  .redaction svg{display:block;width:100%;height:100%}
 
   .coda{
     margin-top:2.5rem;
@@ -133,7 +121,7 @@
 
   @media (prefers-reduced-motion:reduce){
     main{animation:none}
-    a,.redacted{transition:none}
+    a{transition:none}
   }
 </style>
 </head>
@@ -141,7 +129,17 @@
   <main>
     <h1>Khalil Fuller</h1>
 
-    <p>Currently obsessively working on <span class="redacted" tabindex="0">something new.</span></p>
+    <p>Currently obsessively working on <span class="redaction" role="img" aria-label="redacted">
+      <svg viewBox="0 0 200 30" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="var(--ink-black)" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 14.2C48 9.6 96 18.4 148 12.6C172 9.8 188 15.4 197 12.4" stroke-width="11.4"/>
+          <path d="M10 18.4C58 22.6 118 13.2 170 19.2C182 20.6 188 18.8 192 17.6" stroke-width="10.2"/>
+          <path d="M4 9.2C68 5.8 136 10.6 199 6.4" stroke-width="3.1" opacity=".95"/>
+          <path d="M15 24.6C78 27.4 132 22.2 179 25.2" stroke-width="2.7" opacity=".9"/>
+          <path d="M2.5 12.6C6 12 9 11.4 13 11.6" stroke-width="2.2" opacity=".8"/>
+        </g>
+      </svg>
+    </span></p>
 
     <p>I am also the founder &amp; chairman of <a href="https://www.giftcardbank.org/">Gift Card Bank</a>.</p>
 
