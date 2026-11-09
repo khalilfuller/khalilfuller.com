@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khalil Fuller</title>
+<meta name="description" content="Khalil Fuller — founder & chairman of Gift Card Bank. Previously founder of Learn Fresh and co-founder of Boundless.">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Khalil Fuller">
+<meta property="og:description" content="Founder & chairman of Gift Card Bank. Previously Learn Fresh and Boundless.">
+<meta property="og:url" content="https://khalilfuller.com/">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23212326'/%3E%3Ctext x='16' y='22' font-family='Archivo,Helvetica,sans-serif' font-size='16' font-weight='500' fill='%23ece9e4' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root{
+    --bg:#212326;
+    --bg-glow:#282b2f;
+    --ink:#ece9e4;
+    --ink-soft:#b4b0aa;
+    --rule:rgba(236,233,228,.22);
+    --accent:#d3ab79;
+    --ink-black:#08080a;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    margin:0;
+    min-height:100svh;
+    background:var(--bg);
+    background-image:radial-gradient(120% 90% at 18% 0%, var(--bg-glow) 0%, var(--bg) 58%);
+    color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display:flex;
+    align-items:center;
+    padding:12svh 16px;
+  }
+
+  main{
+    width:100%;
+    max-width:40rem;
+    margin:0 auto;
+    animation:rise .7s cubic-bezier(.2,.7,.3,1) both;
+  }
+
+  h1{
+    margin:0 0 2.5rem;
+    font-size:clamp(2rem,7vw,2.9rem);
+    font-weight:600;
+    letter-spacing:-.035em;
+    line-height:1.08;
+  }
+
+  p{
+    margin:0 0 1.15rem;
+    font-size:clamp(1.0rem,2.4vw,1.125rem);
+    letter-spacing:-.005em;
+    line-height:1.72;
+    color:var(--ink-soft);
+    text-wrap:pretty;
+  }
+
+  p:last-child{margin-bottom:0}
+
+  a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:.08em;
+    transition:color .18s ease, border-color .18s ease;
+  }
+
+  a:hover,a:focus-visible{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+  }
+
+  a:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  .redacted{
+    display:inline-block;
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-weight:400;
+    font-size:.93em;
+    letter-spacing:.01em;
+    padding:.06em .42em .12em;
+    border-radius:1.5px;
+    cursor:help;
+    color:transparent;
+    background:var(--ink-black);
+    box-shadow:.14em 0 0 var(--ink-black), -.09em .03em 0 var(--ink-black);
+    transform:rotate(-.5deg);
+    transition:color .28s ease, background-color .28s ease, box-shadow .28s ease;
+  }
+
+  .redacted:hover,
+  .redacted:focus{
+    color:var(--accent);
+    background:rgba(211,171,121,.1);
+    box-shadow:.14em 0 0 rgba(211,171,121,.1), -.09em .03em 0 rgba(211,171,121,.1);
+    outline:none;
+  }
+
+  .coda{
+    margin-top:2.5rem;
+    padding-top:2rem;
+    border-top:1px solid rgba(236,233,228,.1);
+  }
+
+  .coda p{margin-bottom:.5rem}
+
+  @keyframes rise{
+    from{opacity:0;transform:translateY(10px)}
+    to{opacity:1;transform:none}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    main{animation:none}
+    a,.redacted{transition:none}
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Khalil Fuller</h1>
+
+    <p>Currently obsessively working on <span class="redacted" tabindex="0">something new.</span></p>
+
+    <p>I am also the founder &amp; chairman of <a href="https://www.giftcardbank.org/">Gift Card Bank</a>.</p>
+
+    <p>Most recently I was a Partner at <a href="https://pear.vc/">Pear</a>, where I sourced, won, and supported ~20 early stage companies.</p>
+
+    <p>Previously I co-founded <a href="https://bvco.co/">Boundless</a>, where we incubated <a href="https://www.quipli.com/">Quipli</a>, <a href="https://www.truckbase.com/">Truckbase</a>, and <a href="https://www.stationwise.com/">Stationwise</a>.</p>
+
+    <p>I was also the founder of <a href="https://www.learnfresh.org/">Learn Fresh</a>.</p>
+
+    <div class="coda">
+      <p>I live in Berkeley, California</p>
+      <p>I enjoy time outside</p>
+      <p>I am <a href="https://alwayswork.ing/">alwayswork.ing</a></p>
+    </div>
+  </main>
+</body>
+</html>
